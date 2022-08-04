@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+
+    <div class="guessing-game-container">
+
+        <h2>Number Guessing Game</h2><br>
+        
+        <h3>Specify the range of numbers to guess from</h3>
+        
+        <div class="container">
+
+            <div class="range-labels">
+                <span class="from-range-label">
+                    From
+                </span>
+                <span class="to-range-label">
+                    To
+                </span>
+            </div>
+
+
+            <div id="conv-interact">
+                <form>
+                    <!-- <input type="number" class="number-range-1" id="number-range-1" name="number-range-1" min="0", max="100" value="0">
+                    <input type="number" class="number-range-2" id="number-range-2" name="number-range-2" min="0", max="100" value="0"> -->
+
+                    <input type="number" class="user-min" id="user-min" name="nuser-min" min="0", max="100" value="1">
+                    <input type="number" class="user-max" id="user-max" name="user-max" min="0", max="100" value="100">
+
+                    <input class="btn-range-submit" id="btn-range-submit" type="button" value="Submit Number Range" />
+                </form>
+            </div>
+
+            <div class="range-submission-status">
+                <p id="submission-status"></p>
+            </div>
+
+            <br>
+            <h3>Guess the number</h3>
+            <div class="guess-submit-cont">
+                <input type="number" class="guess-enter" id="guess-enter" name="guess-enter" min="0", max="100">
+                <input class="btn-guess-submit" id="btn-guess-submit" type="button" value="Submit your Guess" />
+            </div>
+
+            <div class="guess-status-cont">
+                <p id="guess-status"></p>
+            </div>
+
+            <div class="score-cont">
+                <p id="score-p"></p>
+            </div>
+
+        </div> 
+
+    </div>
+
+    <div class="img-container">
+        <img class="my-image" src="batman-thinking.gif"/>
+    </div>
+    
+    
+
+    <script>
+        //Declare Variables
+
+
+        //My Functions
+        // function getRandomNum(myMin, myMax){
+        //     return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
+        // }
+        let theRandomNumber = 0;
+        let guessCount = 0;
+        let baseScore = 500;
+
+        //Random Number Generator
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function randomFunc() {
+            let rangeMin = document.querySelector(".user-min").value;
+            let rangeMax = document.querySelector(".user-max").value;
+            // let randomNum = getRandomInt(document.querySelector(".user-min").value, document.querySelector(".user-max").value);
+            theRandomNumber = getRandomInt(document.querySelector(".user-min").value, document.querySelector(".user-max").value);
+            console.log("The random number is: " + theRandomNumber);
+            console.log("The min: " + rangeMin);
+            console.log("The max: " + rangeMax);
+
+            document.getElementById("submission-status").innerHTML = "Range " + rangeMin + " to " + rangeMax + " has been submitted ✅<br>Random Number has been generated ✅<br>Please submit your guess below 👇"
+        }
+
+        //Number Check
+        function numberCheck() {
+            let i = document.querySelector(".guess-enter").value;
+            if (i == theRandomNumber) {
+                let msg = (document.getElementById("guess-status").innerHTML = "Well Done!<br>🎉<br> You guessed the answer! The answer is: " + theRandomNumber);
+                finalScore();
+                return msg;
+            } else if (i < theRandomNumber) {
+                let msg = (document.getElementById("guess-status").innerHTML = "The number is higher than that - try again!");
+                scoreCounter();
+                return msg;
+            } else if (i > theRandomNumber) {
+                let msg = (document.getElementById("guess-status").innerHTML = "The number is lower than that - try again!");
+                scoreCounter();
+                return msg;
+            }
+        }
+
+        //Score Counter
+        function scoreCounter() {
+                guessCount++;
+        }
+
+        function finalScore() {
+            let fScore = baseScore - (guessCount * 50);
+            let fMsg = document.getElementById("score-p").innerHTML = "Your score is: " + fScore + "/500";
+            return fMsg;
+        }
+
+        // function score(){
+        //     let baseScore = 100;
+           
+        //     if(document.getElementById('btn-guess-submit').clicked == true) {
+        //         guessCount++;
+        //     }
+        // }
+
+
+
+        document.getElementById("btn-range-submit").addEventListener("click", randomFunc);
+        document.getElementById("btn-guess-submit").addEventListener("click", numberCheck);
+    </script>
+
+</body>
+</html>

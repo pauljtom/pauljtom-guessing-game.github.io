@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+}
+
+.guessing-game-container {
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 2%;
+    /* background-color: aqua; */
+    background: linear-gradient(294deg, rgba(2,0,36,1) 0%, rgba(118,118,255,1) 0%, rgba(0,212,255,1) 100%);
+    width: 500px;
+    height: auto;
+
+    position: absolute;
+    top: 13%;
+    left: 34%;
+}
+
+.container {
+    display: inline-block;
+    /* border: 1px solid #4CAF50; */
+}
+
+.range-labels {
+    display: inline-block;
+    /* border: 1px solid #4CAF50; */
+}
+
+.from-range-label {
+    display: inline-block;
+    position: absolute;
+    right: 70%;
+    /* border: 1px solid #4CAF50; */
+}
+
+.to-range-label {
+    display: inline-block;
+    padding-right: 80px;
+    /* border: 1px solid #4CAF50; */
+}
+
+.my-image {
+    width: 250px;
+    height: 250px;
+    display: none;
+}
