@@ -1,49 +1,1295 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+/*
+Theme Name: Workserve-Custom-Theme
+Author: PJT
+Author URI: http://workserve.co.za.www422.jnb1.host-h.net/
+Description: A brief description of your theme
+Version: 1.0
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
 
 * {
-    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+}
+
+/* This contains the LOGO & NAVBAR */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.2);
+
+    /* Border for testing */
+    /* border: 1px solid rgb(40, 216, 76); */
+}
+
+
+
+/* Subtitle text */
+.subtitle{
+    background-image: url(images/315116127_9027085930650883_2588189936633892662_n.jpg);
+
+    padding: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px #ffffff;;
+
+    /* Border for testing */
+    /* border: 1px solid rgb(32, 35, 208); */
+}
+
+
+/* My navbar items */
+.WSLogo{
+    height: 100px;
+    width: 300px;
+    }
+
+
+
+
+    /* MEDIA QUERY */
+    /* @media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+      } */
+      
+
+    @media screen and (max-width: 800px) {
+
+        /* .burger-icon {
+            display: block;
+        } */
+
+        .nav-burger {
+            padding-right: 15px;
+            display: block !important;
+        }
+
+
+        .WSLogo {
+            height: 80px;
+            width: 245px;
+        }
+
+        .placements-main-container {
+            /* margin: 0 auto; */
+            /* display: flex;
+            justify-content: right; */
+            /* align-items: center; */
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .placements-main {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .placements-main h4 {
+            text-align: center;
+        }
+
+        /* About Us Stylings */
+
+        .about-big-cont {
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-main-container {
+            width: 100px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;  
+        }
+
+        .about-main-1 {
+            margin: 0;
+            text-align: center !important;
+            width: 300px;
+        }
+
+
+        .about-main {
+            text-align: center;
+        }
+
+        /* Services Page - Media Queries */
+
+        #services-main-head {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .services-main {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .services-main h2 {
+            font-size: 1.6rem !important;
+        }
+
+
+        .services-main-body {
+            padding: 25px !important;
+            text-align: center !important;
+        }
+
+
+        #cleaner-1 {
+            text-align: center !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        #cleaner-2 {
+            text-align: center !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        #cars-1 {
+            text-align: center !important;
+            width: 100% !important;
+            height: 100% !important; 
+        }
+
+        #cars-2 {
+            text-align: center !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .services-images {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+
+        /* Contact Us - Media Queries */
+
+
+
+        .contact-main-container {
+            margin: 0;
+        }
+        
+        .contact-paarl {
+            padding-left: 7px;
+        }
+
+        .paarl-wrapped {
+            display: flex;
+            flex-wrap: wrap;
+
+            width: 350px;
+            height: auto;
+
+            padding-left: 7px;
+            
+        }
+
+        .paarl-wrapper-1 {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .paarl-team {
+            text-align: center;
+
+            width: 300px !important;
+        }
+
+        .paarl-contact {
+            text-align: center;
+        }
+
+        .paarl-wrapper-2 {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .paarl-map-wrapper{
+            display: flex;
+            justify-content: center;
+
+            width: fit-content !important;
+        }
+
+        
+
+        /* .paarl-map {
+            width: 200px;
+        } */
+
+        #paarl-map-iframe {
+            width: 300px;
+            height: 300px;
+        }
+
+
+
+        /* Stellenbosch Med Que */
+
+        .stellies-wrapped {
+            display: flex;
+            flex-wrap: wrap;
+
+            width: 350px;
+            height: auto;
+
+            padding-left: 20px;
+        }
+
+        .stellies-wrapper-1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .stellies-wrapper-2 {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        #stellies-map-iframe {
+            width: 300px;
+            height: 300px;
+        }
+
+        .stellies-map-wrapper{
+            display: flex !important;
+            justify-content: center !important;
+
+            width: fit-content !important;
+        }
+
+        /* Somerset West Med Que */
+
+        .swest-wrapped {
+            display: flex;
+            flex-wrap: wrap;
+            
+            width: 350px;
+            height: auto;
+
+            padding-left: 20px;
+        }
+
+        .swest-wrapper-1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .swest-wrapper-2 {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        #swest-map-iframe {
+            width: 300px;
+            height: 300px;
+        }
+
+        .swest-map-wrapper{
+            display: flex !important;
+            justify-content: center !important;
+
+            width: fit-content !important;
+        }
+
+
+        /* Footer Media Queries */
+
+        #footer-bottom-list {
+            text-align: left;
+        }
+
+        .footer-bottom ul {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .ul-wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cpo {
+            text-align: left;
+        }
+}
+
+
+/* Main Info Section */
+
+.mainInfoCont{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.mainInfo{
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-image: url(images/workserve-stock/edited/cars-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    width:  1400px;
+}
+
+#mainInfo-logo-banner {
+    width: 45%;
+    height: 45%;
+}
+
+/* .unsplash-cleaning{
+    width: 1000px;
+    height: 600px;
+} */
+
+.mainInfo-heading {
+    padding: 5px;
+    background-color: rgba(154, 154, 154, 0.875);
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px #565656;
+    font-size: 19px;
+    color: white;
+}
+
+#mainInfo-heading-excl {font-size: 35px;}
+
+
+
+
+
+/* Client Section Styles */
+
+.clients {
+    background-color: rgb(47, 47, 47);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 35px;
+    /* padding-top: 35px; */
+}
+
+#clients-heading{
+    padding: 10px;
+    font-size: 50px;
+}
+
+#clients-underline {
+    width: 25%;
+}
+
+.clients-main-gallery img {
+    transition: transform .2s;
+}
+
+.clients-main-gallery img:hover {
+    transform: scale(1.3);
+}
+
+
+
+/* Client Slider Functionality */
+.client-gallery {
+
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.client-gallery img {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+
+    object-fit:scale-down
+}
+
+.client-gallery img {
+    transition: transform .2s;
+}
+
+.client-gallery img:hover {
+    transform: scale(1.3);
+}
+
+.clients a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/* Divider */
+.divider {
+    background-image: url(images/315116127_9027085930650883_2588189936633892662_n.jpg);
+    width: 100%;
+    height: 110px;
+    box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Testimonial Stylings */
+
+.testimonials-container {
+    font-family: 'Outfit', sans-serif;
     text-align: center;
 }
 
-.guessing-game-container {
-    display: inline-block;
-    border: 2px solid;
-    border-radius: 2%;
-    /* background-color: aqua; */
-    background: linear-gradient(294deg, rgba(2,0,36,1) 0%, rgba(118,118,255,1) 0%, rgba(0,212,255,1) 100%);
-    width: 500px;
-    height: auto;
-
-    position: absolute;
-    top: 13%;
-    left: 34%;
+.testimonials-container h2 {
+    font-size: 50px;
 }
 
-.container {
-    display: inline-block;
-    /* border: 1px solid #4CAF50; */
+#t-heading {
+    margin-bottom: 10px;
 }
 
-.range-labels {
-    display: inline-block;
-    /* border: 1px solid #4CAF50; */
+#t-subheading {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-.from-range-label {
-    display: inline-block;
-    position: absolute;
-    right: 70%;
-    /* border: 1px solid #4CAF50; */
+.testimonials{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
 }
 
-.to-range-label {
-    display: inline-block;
-    padding-right: 80px;
-    /* border: 1px solid #4CAF50; */
+.testimonials img {
+    transition: transform .2s;
 }
 
-.my-image {
-    width: 250px;
-    height: 250px;
+.testimonials img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Request a Quote Section */
+.quote-container {
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 35px;
+}
+
+.quote-container h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #49B9FB;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1391da;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+/* Footer Section - Home Page */
+.footer {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding-top: 15px;
+
+    background-color: #000000c9;
+    color: #ffffff;
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+
+/* My Insta & Facebook Icons */
+.footer-top img {
+    height: 35px;
+    width: 35px;
+
+
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+    /* For IE, the outcast */
+    zoom:1;
+    display: inline;
+
+    float: left;
+}
+
+#facebook-icon {
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+
+.ul-wrapper {
+    text-align: center;
+}
+
+.ul-wrapper ul {
+    display: inline-block;
+        margin: 0;
+        padding: 0;
+        padding-top: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        /* For IE, the outcast */
+        zoom:1;
+        display: inline;
+}
+
+#footer-line-1 {
+    margin-top: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+
+.footer-body a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-body {
+    /* border-style: dashed; */
+
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.footer-body-wrapper-1{
+    width: fit-content;
+}
+
+.footer-body-wrapper-2{
+    width: fit-content;
+}
+
+/* .footer-body-column-1 {
+    border-style: solid;
+    width: fit-content;
+} */
+
+/* .footer-body-column-2 {
+    border-style: solid;
+    width: fit-content;
+} */
+
+/* .footer-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-count: 2;
+    column-width: 25%;
+
+}
+
+.footer-body-column-2 {
+text-align: right;
+
+} */
+
+.footer-bottom li {
+
+    display: inline-block;
+        margin: 0;
+        padding: 0;
+        padding-right: 50px;
+
+        /* For IE, the outcast */
+        zoom:1;
+        display: inline;
+}
+
+/* Services Page */
+
+#services-main-head {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-main-body {
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.services-images {
+    margin: auto;
+    text-align: center;
+}
+
+.car-images {
+    text-align: center;
+}
+
+#cleaner-1 {
+    text-align: center;
+    height: 350px;
+    width: 600px;
+    /* border-radius: 12px; */
+}
+
+#cleaner-2 {
+    text-align: center;
+    height: 450px;
+    width: 400px;
+    /* border-radius: 25px; */
+}
+
+#cars-1 {
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    padding: 15px;
+    /* border-radius: 20px; */
+}
+
+#cars-2 {
+    text-align: center;
+    height: 550px;
+    width: 900px;
+    padding: 15px;
+    /* border-radius: 20px; */
+}
+
+.services-paragraph {
+    padding-top: 50px;
+}
+
+#disclaimer-head {
+    color: rgb(248, 41, 41);
+    font-family: 'Outfit' sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+.services-disclaimer-wrapper {
+    padding-bottom: 20px;
+}
+
+.services-disclaimer {
+    border-style: solid;
+    border-width: 2px;
+    border-color:#565656;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+/* Clients Page */
+.clients-main-container {
+    background-color: rgba(82, 82, 82, 0.568);
+    padding: 25px;
+}
+
+.clients-main {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.clients-main-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clients-main-gallery img{
+    width: 200px;
+    height: 200px;
+    object-fit:scale-down;
+    margin-right: 50px;
+    border-radius: 15px;
+}
+
+
+/* -------------------------- */
+
+
+/* About Us Page */
+.about-main-container {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.about-main-1 {
+    text-align: left;
+}
+
+.about-main-2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#about-highlight {
+    font-size: xx-large;
+    color: #1391da;
+}
+
+#about-wwo {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+
+/* -------------------------- */
+
+/* Placements Page */
+
+
+.placements-main-container {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 200px;
+    padding-top: 25px;
+}
+
+/* -------------------------- */
+
+/* Contact Us Page */
+.contact-main h2 {
+    text-align: center;
+}
+
+#contact-main-heading {
+    padding-bottom: 20px;
+}
+
+
+    /* Paarl */
+.contact-paarl {
+    /* background-image: url(images/loactions/paarl.jpg);
+
+    background-size: 800px 430px;
+    background-repeat: no-repeat;
+    background-position: top; */
+
+    /* color: #ffffff; */
+    color: black;
+    /* font-size: larger; */
+    text-shadow: 1px 1px 2px white;
+    
+    
+}
+
+/* .paarl-wrapped  {
+    background-image: url(images/loactions/paarl.jpg);
+    
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+    
+
+.paarl-head {
+    text-align: center;
+}
+
+.paarl-wrapper-1 {
+    font-size: 105%;
+    /* background-color: #56565696; */
+    background-color: #ffffffb1;
+    
+
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.paarl-team {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.paarl-contact {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.paarl-wrapper-2 {
+    font-size: 105%;
+    
+    background-color: #ffffffb1;
+
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.paarl-address {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.paarl-open-hours {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.paarl-map-wrapper {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+
+    /* Stellies */
+
+.stellies-head {
+    text-align: center;
+}
+
+.stellies-wrapper-1 {
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.stellies-team {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.stellies-contact {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.stellies-wrapper-2 {
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.stellies-address {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.stellies-open-hours {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.stellies-map-wrapper {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+
+}
+
+
+
+/* Somerset West */
+
+.swest-head {
+    text-align: center;
+}
+
+.swest-wrapper-1 {
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.swest-team {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.swest-contact {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.swest-wrapper-2 {
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.swest-address {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.swest-open-hours {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.swest-map-wrapper {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fonts */
+.contact-main-container h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-main-container p {
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-main-container {
+    text-align: left;
+}
+
+
+/* Reviews */
+#reviews-container {
+    margin-top: 20px;
+  }
+  
+  .review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review p {
+    margin: 0;
+  }
+  
+  .review p:first-child {
+    font-weight: bold;
+  }
+
+
+/* Hidden Navbar */
+
+/* .hidden-navbar-cont {
     display: none;
+} */
+
+/* .hidden-navbar {
+    padding-top: 15px;
+    padding-left: 15px;
+
+    display: none;
+    font-family: 'Outfit', sans-serif;
+
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+} */
+
+/* .hidden-navbar a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+    padding-top: 10px;
 }
+
+.hidden-navbar a:hover {
+    color: #1391da;
+}
+
+.active {
+    color: #1391da;
+} */
+
+
+
+
+  /* TOPNAV TEST */
+  /* .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+
+
+  /* ------------------------------------------- */
+
+  /* New Navbar Stylings */
+
+  
+li{
+  list-style: none;
+}
+
+a{
+  color: #3478ff;
+  text-decoration: none;
+}
+
+.container{
+    max-width: 1224px;
+    width: 92%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 25px;
+    align-items: center;
+  }
+
+  .nav-branding{
+    font-size: 2rem;
+    
+  }
+
+  .nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content:space-between; */
+    /* align-items: center; */
+    gap: 25px;
+    
+    /* border-style: dashed; */
+  }
+
+  .nav-link{
+    transition: 0.3s ease-out;
+  }
+
+  .nav-link:hover{
+    color: grey;
+  }
+
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: black;
+  }
+
+
+  @media(max-width:1024px){
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #262626;
+      width: 100%;
+      text-align: center;
+      padding-right: 25px;
+      transition: 0.3s;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+  }

@@ -5,142 +5,278 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Number Guessing Game</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon/letter-w-16.png">
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap" rel="stylesheet">
+
+
+    <title>Workserve</title>
+
 </head>
 <body>
+    
+        <div class="header">
+            <img src="images/Workserve LOGOS originalpng.png" alt="Workserve-Logo" class="WSLogo">
+            
+            <div class="container"> 
+                <nav class="navbar">
+                  
+                  <ul class="nav-menu">
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="clients.html" class="nav-link">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="placements.html" class="nav-link">Placements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                  </ul>
 
-    <div class="guessing-game-container">
+                  <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                </nav>
+             </div>
+                
+            </div>
+            
 
-        <h2>Number Guessing Game</h2><br>
-        
-        <h3>Specify the range of numbers to guess from</h3>
-        
-        <div class="container">
+       
 
-            <div class="range-labels">
-                <span class="from-range-label">
-                    From
-                </span>
-                <span class="to-range-label">
-                    To
-                </span>
+
+<h3 class="subtitle">Your Preferred Cleaning, Outsourcing & Placement Agency</h3>
+
+
+
+    
+    
+<div class="mainInfoCont">
+
+    <div class="mainInfo">
+
+        <div class="mainInfo-heading">
+            <img id="mainInfo-logo-banner" src="images/Workserve LOGOS originalpng.png" alt="Workserve-Logo">
+            <p>Cleaning for<br>Home | Office | Construction</p>
+            <p id="mainInfo-heading-excl">Look no further, we do it all!</p>
+        </div>
+        <!-- <img class="unsplash-cleaning" src="images/unsplash-cleaning.jpg" alt="Unsplash-Cleaning-Background"> -->
+    </div>
+
+</div>
+
+
+
+<div class="clients">
+
+    <!-- The blue divider will go here -->
+    <div class="divider"></div>
+
+    <h1 id="clients-heading">Our Clients</h1>
+    <hr id="clients-underline">
+
+        <div class="client-gallery">
+                
+                <img src="images/newclientlogostoadd/Nexus-logo.png">
+                <img src="images/newclientlogostoadd/PBH.png">
+                <img src="images/newclientlogostoadd/Nashua-Logo.png">
+        </div>
+
+    <a id="clients-read-more" href="clients.html">Read More</a>
+
+
+</div>
+
+<!-- The blue divider will go here -->
+<div class="divider"></div>
+
+<!-- Testimonials Section -->
+
+<div class="testimonials-container">
+    
+    <h2 id="t-heading">TESTIMONIALS</h2>
+    <p id="t-subheading">Read what others have to say</p>
+
+        <div class="testimonials">
+
+            <div class="t-lb">
+                <a href="https://g.co/kgs/XHjPrF" target="_blank">
+                    <img src="images/Reviews/052023_reviews/t-lb.png" alt="T-LB">
+                </a>
             </div>
 
-
-            <div id="conv-interact">
-                <form>
-                    <!-- <input type="number" class="number-range-1" id="number-range-1" name="number-range-1" min="0", max="100" value="0">
-                    <input type="number" class="number-range-2" id="number-range-2" name="number-range-2" min="0", max="100" value="0"> -->
-
-                    <input type="number" class="user-min" id="user-min" name="nuser-min" min="0", max="100" value="1">
-                    <input type="number" class="user-max" id="user-max" name="user-max" min="0", max="100" value="100">
-
-                    <input class="btn-range-submit" id="btn-range-submit" type="button" value="Submit Number Range" />
-                </form>
+            <div class="t-mr">
+                <a href="https://g.co/kgs/gZ87U7" target="_blank">
+                    <img src="images/Reviews/052023_reviews/t-mr.png" alt="T-MR">
+                </a>
+                
             </div>
+        </div>
 
-            <div class="range-submission-status">
-                <p id="submission-status"></p>
+        <!-- The blue divider will go here -->
+        <div class="divider"></div>
+</div>
+
+<div class="quote-container">
+    
+    <div class="quote-request-form">
+        <h1>Request a Quote</h1>
+        <form action="process_form.php" method="POST">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+          
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="user-location">Location:</label>
+                <select id="user-location" name="user-location" required>
+                    <option value="Cape Town">Cape Town</option>
+                    <option value="Blue Downs">Blue Downs</option>
+                    <option value="Brackenfell">Brackenfell</option>
+                    <option value="Constantia">Constantia</option>
+                    <option value="Goodwood">Goodwood</option>
+                    <option value="Kraaifontein">Kraaifontein</option>
+                    <option value="Langa">Langa</option>
+                    <option value="Mitchells Plain">Mitchells Plain</option>
+                    <option value="Parow">Parow</option>
+                    <option value="Philippi">Philippi</option>
+                    <option value="Somerset West">Somerset West</option>
+                    <option value="Stellenbosch">Stellenbosch</option>
+                    <option value="Strand">Strand</option>
+                    <option value="Ashton">Ashton</option>
+                    <option value="Ceres">Ceres</option>
+                    <option value="Franschhoek">Franschhoek</option>
+                    <option value="Grabouw">Grabouw</option>
+                    <option value="Montagu">Montagu</option>
+                    <option value="Paarl">Paarl</option>
+                    <option value="Robertson">Robertson</option>
+                    <option value="Stellenbosch">Stellenbosch</option>
+                    <option value="Wellington">Wellington</option>
+                </select>
+          
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <input type="submit" value="Submit">
+          </form>
+
+        <!-- <form action="">
+            <div class="columns-container">
+
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="eg. John">
+
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="eg. Doe">
+
+                    <label for="">Phone Number</label>
+                    <input type="number" placeholder="eg. 021 123 456">
+
+                    <label for="">Email</label>
+                    <input type="email" placeholder="eg. happyplace.hotmail.com">
             </div>
+            
 
+            <label for="">Message</label>
+            <input type="text">
             <br>
-            <h3>Guess the number</h3>
-            <div class="guess-submit-cont">
-                <input type="number" class="guess-enter" id="guess-enter" name="guess-enter" min="0", max="100">
-                <input class="btn-guess-submit" id="btn-guess-submit" type="button" value="Submit your Guess" />
-            </div>
+            <input id="submit-btn" type="button" value="Submit">
+        </form> -->
+    </div>
 
-            <div class="guess-status-cont">
-                <p id="guess-status"></p>
-            </div>
+</div>
 
-            <div class="score-cont">
-                <p id="score-p"></p>
-            </div>
 
-        </div> 
+<div class="footer">
+    <div class="footer-top">
+        <!-- <img src="images/icons/facebook-app-symbol.png" alt="facebook-icon">
+        <img src="images/icons/instagram.png" alt="instagram-icon"> -->
+
+        <div class="ul-wrapper">
+
+            <!-- <img id="facebook-icon" src="images/icons/facebook-app-symbol.png" alt="facebook-icon">
+            <img id="instagram-icon" src="images/icons/instagram.png" alt="instagram-icon"> -->
+
+            <a href="https://www.facebook.com/WorkserveCleaning" target="_blank">
+                <img id="facebook-icon" src="images/icons/facebook_w.png" alt="facebook-icon">
+            </a>
+            <!-- <img id="facebook-icon" src="images/icons/facebook_w.png" alt="facebook-icon"> -->
+            <a href="https://www.instagram.com/workserve/" target="_blank">
+                <img id="instagram-icon" src="images/icons/instagram_w.png" alt="instagram-icon">
+            </a>
+            <!-- <img id="instagram-icon" src="images/icons/instagram_w.png" alt="instagram-icon"> -->
+
+
+            <ul>Cleaning</ul>
+            <ul>•</ul>
+            <ul>Outsourcing</ul>
+            <ul>•</ul>
+            <ul>Placements</ul>
+        </div>      
+    </div>
+
+    <hr id="footer-line-1">
+
+    <div class="footer-body">
+        
+        <div class="footer-body-wrapper-1">
+            <ul class="footer-body-column-1">
+                <a href="index.html"><li>Home</li></a>
+                <a href="aboutus.html"><li>About Us</li></a>
+                <a href="services.html"><li>Services</li></a>
+            </ul>
+        </div>
+        
+        <div class="footer-body-wrapper-2">
+            <ul class="footer-body-column-2">
+                <a href="clients.html"><li>Clients</li></a>
+                <a href="placements.html"><li>Placements</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+            </ul>
+        </div>
 
     </div>
 
-    <div class="img-container">
-        <img class="my-image" src="batman-thinking.gif"/>
+    <hr>
+
+    <div class="footer-bottom">
+        <ul>
+            <li>Accessibility</li>
+            <li>Copyright Information</li>
+            <li>Privacy Policy</li>
+        </ul>
+        
     </div>
-    
-    
 
-    <script>
-        //Declare Variables
+</div>
 
 
-        //My Functions
-        // function getRandomNum(myMin, myMax){
-        //     return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
-        // }
-        let theRandomNumber = 0;
-        let guessCount = 0;
-        let baseScore = 500;
-
-        //Random Number Generator
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        function randomFunc() {
-            let rangeMin = document.querySelector(".user-min").value;
-            let rangeMax = document.querySelector(".user-max").value;
-            // let randomNum = getRandomInt(document.querySelector(".user-min").value, document.querySelector(".user-max").value);
-            theRandomNumber = getRandomInt(document.querySelector(".user-min").value, document.querySelector(".user-max").value);
-            console.log("The random number is: " + theRandomNumber);
-            console.log("The min: " + rangeMin);
-            console.log("The max: " + rangeMax);
-
-            document.getElementById("submission-status").innerHTML = "Range " + rangeMin + " to " + rangeMax + " has been submitted ✅<br>Random Number has been generated ✅<br>Please submit your guess below 👇"
-        }
-
-        //Number Check
-        function numberCheck() {
-            let i = document.querySelector(".guess-enter").value;
-            if (i == theRandomNumber) {
-                let msg = (document.getElementById("guess-status").innerHTML = "Well Done!<br>🎉<br> You guessed the answer! The answer is: " + theRandomNumber);
-                finalScore();
-                return msg;
-            } else if (i < theRandomNumber) {
-                let msg = (document.getElementById("guess-status").innerHTML = "The number is higher than that - try again!");
-                scoreCounter();
-                return msg;
-            } else if (i > theRandomNumber) {
-                let msg = (document.getElementById("guess-status").innerHTML = "The number is lower than that - try again!");
-                scoreCounter();
-                return msg;
-            }
-        }
-
-        //Score Counter
-        function scoreCounter() {
-                guessCount++;
-        }
-
-        function finalScore() {
-            let fScore = baseScore - (guessCount * 50);
-            let fMsg = document.getElementById("score-p").innerHTML = "Your score is: " + fScore + "/500";
-            return fMsg;
-        }
-
-        // function score(){
-        //     let baseScore = 100;
-           
-        //     if(document.getElementById('btn-guess-submit').clicked == true) {
-        //         guessCount++;
-        //     }
-        // }
-
-
-
-        document.getElementById("btn-range-submit").addEventListener("click", randomFunc);
-        document.getElementById("btn-guess-submit").addEventListener("click", numberCheck);
-    </script>
 
 </body>
+<!-- Credits -->
+<!-- <a href="https://www.flaticon.com/free-icons/cleaning" title="cleaning icons">Cleaning icons created by monkik - Flaticon</a> -->
+<script src="script.js"></script>
 </html>

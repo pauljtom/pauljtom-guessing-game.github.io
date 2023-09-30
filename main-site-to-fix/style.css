@@ -1,0 +1,883 @@
+/*
+Theme Name: Workserve-Custom-Theme
+Author: PJT
+Author URI: http://workserve.co.za.www422.jnb1.host-h.net/
+Description: A brief description of your theme
+Version: 1.0
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+}
+
+.header {
+    /* padding: 10px; */
+    /* border-color: black;
+    border-style: solid; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-color: #fff;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.2); */
+
+    /* width: auto; */
+    width: 100%;
+    margin: 0;
+    box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.2);
+}
+
+/* .header img {
+ width: 250px;
+ height: 90px;
+} */
+
+/* Subtitle text */
+
+.subtitle{
+    background-image: url(images/315116127_9027085930650883_2588189936633892662_n.jpg);
+
+    padding: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px #ffffff;;
+}
+
+
+/* My navbar items */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    font-family: 'Outfit', sans-serif;
+    font-size: larger;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-right: 40px;
+  }
+  
+  .navbar li:last-child {
+    margin-right: 20px;
+
+  }
+
+  .navbar a {
+    color: black;
+    text-decoration: none;
+  }
+
+/* Main Info Section */
+
+.mainInfoCont{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mainInfo{
+    /* border-color: greenyellow; */
+    /* border-style: solid; */
+    border-radius: 10px;
+
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+    background-image: url(images/workserve-stock/edited/cars-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 550px;
+    width:  1400px;
+}
+
+#mainInfo-logo-banner {
+    width: 45%;
+    height: 45%;
+}
+
+/* .unsplash-cleaning{
+    width: 1000px;
+    height: 600px;
+} */
+
+.mainInfo-heading {
+    padding: 5px;
+    background-color: rgba(154, 154, 154, 0.875);
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px #565656;
+    font-size: 19px;
+    color: white;
+}
+
+#mainInfo-heading-excl {font-size: 35px;}
+
+
+.WSLogo{
+    height: 18%;
+    width: 18%;
+    
+}
+
+/* Client Section Styles */
+
+.clients {
+    background-color: rgb(47, 47, 47);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 35px;
+    /* padding-top: 35px; */
+}
+
+#clients-heading{
+    padding: 10px;
+    font-size: 50px;
+}
+
+#clients-underline {
+    width: 25%;
+}
+
+.clients-main-gallery img {
+    transition: transform .2s;
+}
+
+.clients-main-gallery img:hover {
+    transform: scale(1.3);
+}
+
+
+
+/* Client Slider Functionality */
+.client-gallery {
+
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.client-gallery img {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+
+    object-fit:scale-down
+}
+
+.client-gallery img {
+    transition: transform .2s;
+}
+
+.client-gallery img:hover {
+    transform: scale(1.3);
+}
+
+.clients a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/* Divider */
+.divider {
+    background-image: url(images/315116127_9027085930650883_2588189936633892662_n.jpg);
+    width: 100%;
+    height: 110px;
+    box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Testimonial Stylings */
+
+.testimonials-container {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+}
+
+.testimonials-container h2 {
+    font-size: 50px;
+}
+
+#t-heading {
+    margin-bottom: 10px;
+}
+
+#t-subheading {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+}
+
+.testimonials img {
+    transition: transform .2s;
+}
+
+.testimonials img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Request a Quote Section */
+.quote-container {
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 35px;
+}
+
+.quote-container h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #49B9FB;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1391da;
+  }
+
+
+
+/* .quote-container {
+
+    font-family: 'Poppins', sans-serif;
+
+    padding-bottom: 50px;
+    text-align: center;
+
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+    width: 800px;
+    height: 300px;
+}
+
+.columns-container {
+    
+    column-count: 2;
+} */
+
+
+/* .columns-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.column1,
+.column2 {
+    width: 45%;
+} */
+
+
+
+/* Footer Section - Home Page */
+.footer {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding-top: 12px;
+
+    background-color: #000000c9;
+    color: #ffffff;
+
+    /* border-style: solid;
+    border-color: rgb(0, 0, 0); */
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+
+/* My Insta & Facebook Icons */
+.footer-top img {
+    height: 35px;
+    width: 35px;
+
+
+    display: inline;
+    margin: 0;
+    padding: 0;
+    /* For IE, the outcast */
+    zoom:1;
+    *display: inline;
+
+    float: left;
+
+    /* display: flex;
+    justify-content: flex-start;
+    display: inline; */
+
+    /* border-style: solid;
+    border-color: blue; */
+}
+
+#facebook-icon {
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+
+.ul-wrapper {
+    text-align: center;
+}
+
+.ul-wrapper ul {
+    display: inline-block;
+        margin: 0;
+        padding: 0;
+        padding-top: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+}
+
+#footer-line-1 {
+    margin-top: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+/* .footer-body {} */
+
+.footer-body a {
+    color: white;
+    text-decoration: none;
+
+    column-count: 2;
+    column-width: 150px;
+    column-gap: 20px;
+    list-style-type: none;
+}
+
+.footer-bottom li {
+
+    display: inline-block;
+        margin: 0;
+        padding: 0;
+        padding-right: 50px;
+
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+}
+
+
+
+
+
+
+
+
+
+/* Services Page */
+#services-main-head {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services-main-body {
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.services-images {
+    margin: auto;
+    text-align: center;
+}
+
+.car-images {
+    text-align: center;
+}
+
+#cleaner-1 {
+    text-align: center;
+    height: 350px;
+    width: 600px;
+    border-radius: 12px;
+}
+
+#cleaner-2 {
+    text-align: center;
+    height: 450px;
+    width: 400px;
+    border-radius: 25px;
+}
+
+#cars-1 {
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#cars-2 {
+    text-align: center;
+    height: 550px;
+    width: 900px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* #cleaner-2 {
+    float: right;
+    text-align: right;
+    height: 250px;
+    width: 300px;
+    margin: 25px;
+    border-radius: 12px;
+}
+
+#cleaner-3 {
+    float: right;
+    height: 250px;
+    width: 150px;
+    margin: 25px;
+    border-radius: 12px;
+} */
+
+.services-paragraph {
+    padding-top: 50px;
+}
+
+#disclaimer-head {
+    color: rgb(248, 41, 41);
+    font-family: 'Outfit' sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+.services-disclaimer-wrapper {
+    padding-bottom: 20px;
+}
+
+.services-disclaimer {
+    border-style: solid;
+    border-width: 2px;
+    border-color:#565656;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+
+/* Clients Page */
+.clients-main-container {
+    background-color: rgba(82, 82, 82, 0.568);
+    padding: 25px;
+}
+
+.clients-main {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.clients-main-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clients-main-gallery img{
+    width: 200px;
+    height: 200px;
+    object-fit:scale-down;
+    margin-right: 50px;
+    border-radius: 15px;
+}
+
+/* -------------------------- */
+
+/* About Us Page */
+.about-main-container {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.about-main-1 {
+    text-align: left;
+}
+
+.about-main-2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#about-highlight {
+
+    font-size: xx-large;
+    color: #1391da;
+}
+
+#about-wwo {
+    padding-top: 25px;
+}
+
+/* -------------------------- */
+/* Placements Page */
+.placements-main-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.placements-main {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------- */
+
+
+/* Contact Us Page */
+.contact-main h2 {
+    text-align: center;
+
+}
+
+#contact-main-heading {
+    padding-bottom: 20px;
+}
+
+    /* Paarl */
+.contact-paarl {
+    /* background-image: url(images/loactions/paarl.jpg);
+
+    background-size: 800px 430px;
+    background-repeat: no-repeat;
+    background-position: top; */
+
+    /* color: #ffffff; */
+    color: black;
+    /* font-size: larger; */
+    text-shadow: 1px 1px 2px white;
+    
+    
+}
+
+/* .paarl-wrapped  {
+    background-image: url(images/loactions/paarl.jpg);
+    
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+    
+
+.paarl-head {
+    text-align: center;
+}
+
+.paarl-wrapper-1 {
+    font-size: 105%;
+    /* background-color: #56565696; */
+    background-color: #ffffffb1;
+    
+
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.paarl-team {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.paarl-contact {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.paarl-wrapper-2 {
+    font-size: 105%;
+    
+    background-color: #ffffffb1;
+
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.paarl-address {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.paarl-open-hours {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.paarl-map-wrapper {
+    display: block;
+    text-align: center;
+    padding: 25px;
+
+
+
+/* 
+    border: 1px solid red;
+    box-shadow: 10px 10px #565656; */
+}
+
+.paarl-map {
+    border-radius: 10px;
+    transform: translateY(15px);
+}
+
+
+    /* Stellies */
+
+.stellies-head {
+    text-align: center;
+}
+
+.stellies-wrapper-1 {
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.stellies-team {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.stellies-contact {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.stellies-wrapper-2 {
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.stellies-address {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.stellies-open-hours {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.stellies-map-wrapper {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+
+}
+
+
+
+/* Somerset West */
+
+.swest-head {
+    text-align: center;
+}
+
+.swest-wrapper-1 {
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.swest-team {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.swest-contact {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.swest-wrapper-2 {
+    padding: 15px;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.swest-address {
+    width: 400px;
+    float:left; /* add this */
+    /* border: 1px solid red; */
+}
+
+.swest-open-hours {
+    /* border: 1px solid green; */
+    float: left; /* add this */
+}
+
+.swest-map-wrapper {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fonts */
+.contact-main-container h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-main-container p {
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-main-container {
+    text-align: left;
+}
+
+
+/* Reviews */
+#reviews-container {
+    margin-top: 20px;
+  }
+  
+  .review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review p {
+    margin: 0;
+  }
+  
+  .review p:first-child {
+    font-weight: bold;
+  }
+  
